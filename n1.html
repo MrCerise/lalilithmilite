@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Lilith Milite</title>
+    <link rel="stylesheet" href="stylen1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.cdnfonts.com/css/roller-coaster" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+    
+
+    <!-- *** === Gestion du Menu de Navigation *** === -->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">
+                Toggle navigation
+              </span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">La Lilith Milite</a>
+          </div>
+          <!-- *** Menu de navigation *** -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul id="menu-liste" class="nav navbar-nav">
+              <li>
+                <a 
+                   id="bouton-Menu_1" 
+                   class="page-scroll" href="n1.html">N°1</a>
+              </li>
+              <li>
+                <a 
+                   id="bouton-Menu_2" 
+                   class="page-scroll" href="#slide_menu_2">Menu 2
+                </a>
+              </li>
+              <li>
+                <a id="bouton-Menu_3" 
+                   class="page-scroll" href="#slide_menu_3">Menu 3
+                </a>
+              </li>
+              <li>
+                <a 
+                   id="bouton-Menu_4" 
+                   class="page-scroll" href="#slide_menu_4">Menu 4
+                </a>
+              </li>
+              <li>
+                <a id="bouton-Menu_5" 
+                   class="page-scroll" href="#slide_menu_5">Menu 5
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h2 class="w3-center">Manual Slideshow</h2>
+
+      <div class="w3-content w3-display-container">
+        <img class="mySlides" src="n1/1.png" style="width:27%">
+        <img class="mySlides" src="n1/2.png" style="width:27%">
+        <img class="mySlides" src="n1/3.png" style="width:27%">
+        <img class="mySlides" src="n1/4.png" style="width:27%">
+        <img class="mySlides" src="n1/5.png" style="width:27%">
+        <img class="mySlides" src="n1/6.png" style="width:27%">
+        <img class="mySlides" src="n1/7.png" style="width:27%">
+        <img class="mySlides" src="n1/8.png" style="width:27%"> 
+        <img class="mySlides" src="n1/9.png" style="width:27%">
+        <img class="mySlides" src="n1/10.png" style="width:27%">
+        <img class="mySlides" src="n1/11.png" style="width:27%">
+        <img class="mySlides" src="n1/12.png" style="width:27%">
+      
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" style="margin-left: 450px; margin-top: -250px;">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)" style="margin-left: 450px;">&#10095;</button>
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+
+</body>
+</html>

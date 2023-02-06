@@ -1,0 +1,79 @@
+/*=================================== 
+        MENU DE NAVIGATION 
+remember to resize the window for watch xs menu
+n'oublier pas de redimmensionner la fenêtre pour voir le menu en mode XS
+=================================== */
+
+/* === couleur de la barre du menu ===*/
+
+nav.navbar 
+{
+  background-color: #555252; 
+}
+
+/* === couleur Brand === */
+
+nav.navbar-header a.navbar-brand:link, .navbar-header a.navbar-brand:visited 
+{
+  font-weight: bold;
+  color: #ffffff; 
+  
+}
+
+a:link, a:visited 
+{
+  color: #ffffff; 
+}
+
+/* === couleur des liens par default === */
+nav .navbar-nav a:link, nav .navbar-nav a:visited 
+{
+color: #FFFFFF;
+font-weight: bold; 
+}
+
+/* === couleur bakground des liens au survol de la souris === */
+nav ul.nav.navbar-nav a:hover 
+{
+background-color: rgba(99, 96, 96, 0.42); 
+}
+
+/* === Couleur du lien au click de la souris === */
+nav ul.nav.navbar-nav a:focus 
+{
+outline: none;
+color: #6cc46a; 
+}
+
+/* === Lien active ===*/
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus 
+{
+background-color: #000000; 
+}
+
+nav .nav.navbar-nav li a:active 
+{
+background-color: #000000; 
+}
+
+nav .nav.navbar-nav li a:active 
+{
+background: #5a5858;
+text-decoration: none; 
+}
+main {
+    margin-top: 60px;
+    margin-left: 50px;
+    font-family: 'Roller Coaster', sans-serif;
+}
+@import url('https://fonts.cdnfonts.com/css/roller-coaster');
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  .n1 {
+    margin-right: 100px;
+  }
